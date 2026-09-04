@@ -4,111 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explora Costa Rica</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-
-        .encabezado {
-            background-color: #234;
-            color: white;
-            padding: 20px;
-        }
-
-        .titulo {
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .menu {
-            margin-top: 15px;
-        }
-
-        .opcion {
-            display: inline-block;
-            margin-right: 20px;
-            color: white;
-        }
-
-        .contenido {
-            width: 90%;
-            margin: 30px auto;
-        }
-
-        .bloque {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .subtitulo {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .tarjetas {
-            display: flex;
-            gap: 20px;
-        }
-
-        .tarjeta {
-            width: 30%;
-            background-color: #eee;
-            padding: 15px;
-        }
-
-        .tarjeta img {
-            width: 100%;
-        }
-
-        .nombre {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .boton {
-            display: inline-block;
-            background-color: #234;
-            color: white;
-            padding: 10px 15px;
-            margin-top: 10px;
-        }
-
-        .pie {
-            background-color: #234;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-    <div class="encabezado">
+    <header class="encabezado">
 
         <div class="titulo">
             Explora Costa Rica
         </div>
 
-        <div class="menu">
+        <nav class="menu">
             <span class="opcion">Inicio</span>
             <span class="opcion">Destinos</span>
             <span class="opcion">Actividades</span>
             <span class="opcion">Contacto</span>
-        </div>
+        </nav>
 
-    </div>
+    </header>
 
 
-    <div class="contenido">
+    <main class="contenido">
 
-        <div class="bloque">
+        <section class="bloque" aria-label="Introducción a Costa Rica">
 
             <div class="subtitulo">
                 Descubre Costa Rica
@@ -119,10 +38,10 @@
                 playas, volcanes y parques nacionales.
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="bloque">
+        <section class="bloque" aria-label="Destinos recomendados">
 
             <div class="subtitulo">
                 Destinos recomendados
@@ -194,10 +113,10 @@
 
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="bloque">
+        <section class="bloque" aria-label="Información importante">
 
             <div class="subtitulo">
                 Información importante
@@ -208,12 +127,12 @@
                 condiciones climáticas y recomendaciones oficiales.
             </div>
 
-        </div>
+        </section>
 
-    </div>
+    </main>
 
 
-    <div class="pie">
+    <footer class="pie">
 
         <div>
             Explora Costa Rica
@@ -227,7 +146,7 @@
             Universidad Cenfotec
         </div>
 
-    </div>
+    </footer>
 
 </body>
 </html>

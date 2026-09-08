@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coordinar voluntarios universitarios — Innovation Hub</title>
+  </head>
+  <body>
+    <a href="#contenido">Saltar al contenido principal</a>
+
+    <header>
+      <a href="../index.html">Innovation Hub</a>
+
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="publicar.html">Publicar iniciativa</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="perfil.html">Mi perfil</a></li>
+          <li><a href="solicitudes.html">Mis solicitudes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+      <p><a href="catalogo.html">Volver al catálogo de iniciativas</a></p>
+
+      <article aria-labelledby="titulo-iniciativa">
+        <h1 id="titulo-iniciativa">Coordinar voluntarios universitarios</h1>
+
+        <section aria-labelledby="titulo-informacion">
+          <h2 id="titulo-informacion">Información de la iniciativa</h2>
+          <dl>
+            <dt>Autor</dt>
+            <dd>Ana Rojas</dd>
+
+            <dt>Fecha de publicación</dt>
+            <dd>
+              <time datetime="2026-08-24">24 de agosto de 2026</time>
+            </dd>
+
+            <dt>Tipo</dt>
+            <dd>Idea</dd>
+
+            <dt>Categoría</dt>
+            <dd>Gestión comunitaria</dd>
+
+            <dt>Estado</dt>
+            <dd>
+              <span class="estado">
+                <span aria-hidden="true">●</span> En progreso
+              </span>
+            </dd>
+
+            <dt>Nivel de visibilidad</dt>
+            <dd>Pública: cualquier persona puede consultar la iniciativa.</dd>
+          </dl>
+        </section>
+
+        <section aria-labelledby="titulo-descripcion">
+          <h2 id="titulo-descripcion">Descripción completa</h2>
+          <p>
+            Plataforma para publicar turnos de voluntariado, asignar
+            participantes y registrar las horas cumplidas. La iniciativa busca
+            facilitar la coordinación entre estudiantes universitarios y
+            organizaciones comunitarias que necesitan apoyo en sus actividades.
+          </p>
+          <p>
+            Cada organización podrá indicar el objetivo de la actividad, el
+            lugar, la fecha, el horario y la cantidad de personas necesarias.
+            Los estudiantes podrán consultar los turnos disponibles e
+            inscribirse según sus intereses y disponibilidad.
+          </p>
+          <p>
+            Las personas responsables de cada actividad podrán confirmar la
+            asistencia y registrar las horas de participación. Cada voluntario
+            podrá consultar su historial, mientras que el equipo coordinador
+            tendrá un registro de los turnos cubiertos y de los espacios
+            pendientes de asignación.
+          </p>
+          <p>
+            La primera versión incluirá la publicación de actividades, la
+            inscripción a turnos y el registro de horas. El equipo está
+            trabajando en el diseño de las pantallas y en el desarrollo de la
+            interfaz de la plataforma.
+          </p>
+        </section>
+
+        <section aria-labelledby="titulo-competencias">
+          <h2 id="titulo-competencias">Competencias requeridas</h2>
+          <ul>
+            <li>React</li>
+            <li>Diseño de interfaces</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="titulo-equipo">
+          <h2 id="titulo-equipo">Miembros del equipo</h2>
+          <p>3 de 5 miembros. Hay 2 espacios disponibles.</p>
+          <ul>
+            <li><strong>Ana Rojas</strong>: coordinación de la iniciativa.</li>
+            <li><strong>Daniel Pérez</strong>: desarrollo de la interfaz en React.</li>
+            <li><strong>Lucía Hernández</strong>: diseño de interfaces.</li>
+          </ul>
+        </section>
+        <!-- Formulario -->
+        <section aria-labelledby="titulo-solicitud">
+          <h2 id="titulo-solicitud">Solicitud de participación</h2>
+
+          <form method="post">
+            <fieldset>
+              <legend>Presentación y competencias</legend>
+
+              <p>
+                <label for="mensaje-presentacion">Mensaje de presentación</label>
+                <textarea
+                  id="mensaje-presentacion"
+                  name="mensaje_presentacion"
+                  rows="5"
+                ></textarea>
+              </p>
+
+              <p>
+                <label for="competencia-principal">
+                  Competencia principal que aportas
+                </label>
+                <input
+                  type="text"
+                  id="competencia-principal"
+                  name="competencia_principal"
+                />
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Rol y disponibilidad</legend>
+
+              <p>
+                <label for="rol-deseado">Rol deseado</label>
+                <input type="text" id="rol-deseado" name="rol_deseado" />
+              </p>
+
+              <p id="ayuda-disponibilidad">
+                Indica los días, horarios y horas por semana que puedes dedicar.
+              </p>
+              <p>
+                <label for="disponibilidad">Disponibilidad</label>
+                <textarea
+                  id="disponibilidad"
+                  name="disponibilidad"
+                  rows="3"
+                  aria-describedby="ayuda-disponibilidad"
+                ></textarea>
+              </p>
+            </fieldset>
+
+            <p><button type="submit">Enviar solicitud de participación</button></p>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Innovation Hub · Universidad CENFOTEC</p>
+      <p><a href="mailto:hub@ejemplo.ac.cr">hub@ejemplo.ac.cr</a></p>
+    </footer>
+  </body>
+</html>
